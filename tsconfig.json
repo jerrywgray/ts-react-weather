@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "./lib/",
+        "module": "commonjs",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "sourceMap": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noEmitOnError": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
