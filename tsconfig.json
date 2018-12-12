@@ -6,11 +6,14 @@
         "target": "esnext",
         "moduleResolution": "node",
         "jsx": "react",
+        "noResolve": false,
+        "noImplicitAny": false,
         "sourceMap": true,
         "strict": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitReturns": true,
-        "noEmitOnError": true
+        "noEmitOnError": true,
+        "types": []
     },
     "exclude": [
         "node_modules"

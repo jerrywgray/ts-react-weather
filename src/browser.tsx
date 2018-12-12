@@ -1,4 +1,4 @@
-import { loadComponents } from "loadable-components";
+import { loadableReady } from "@loadable/component";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -6,7 +6,7 @@ import App from "./app";
 import config from "./config";
 
 // Load all components needed before starting rendering
-loadComponents().then(() => {
+loadableReady(() => {
   ReactDOM.hydrate(
     <BrowserRouter>
       <App />

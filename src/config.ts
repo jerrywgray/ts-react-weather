@@ -6,13 +6,13 @@ const staticContentTypes: { [url: string]: string } = {
 };
 
 const Config: IAppConfig = {
-  browserURL: "browser.js",
+  browserURL: "main.js",
   cacheControl: (prod, days) => !prod || days === 0 ? noCache : `public, max-age=${days * 24 * 60 * 60}`,
   contentTypes: (url) => staticContentTypes[url] ? staticContentTypes[url] : "",
   propsURL: "",
   reactDomURL: (prod) => reactDomCDN + (prod ? ".prodution.js" : ".development.js"),
   reactURL: (prod) => reactCDN + (prod ? ".production.js" : ".development.js"),
-  rootContainer: "content",
+  rootContainer: "main",
 };
 
 export default Config;

@@ -8,14 +8,14 @@ interface IAppConfig {
   rootContainer: string;
 }
 
-declare module "loadable-components/server" {
-  export function getLoadableState(element: JSX.Element): Promise<any>;
-}
+// declare module "loadable-components/server" {
+//   export function getLoadableState(element: JSX.Element): Promise<any>;
+// }
 
 /**
  * Routes type. Maps the route as a key to the Loadable React Component
  */
 interface IRoutes {
   /** Key mapped to Loadable interface */
-  [route: string]: import ("loadable-components").Loadable<any>;
+  [route: string]: import ("@loadable/component").Loadable<any>;
 }

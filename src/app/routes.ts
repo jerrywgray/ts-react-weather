@@ -1,10 +1,7 @@
-import loadable from "loadable-components";
-import Loading from "./components/Loading";
+import loadable from "@loadable/component";
 
 const routes: IRoutes = {
-  "/": loadable(() => import("./components/Home"), {
-    LoadingComponent: Loading,
-  }),
+  "/": loadable(() => import("./components/Home")),
 };
 
 export default routes;
